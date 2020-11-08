@@ -99,10 +99,6 @@
 		606F2310EC8680F89C422DF6B3AA250F /* Realm.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3D83AAA5AFE22338731246B07BC41126 /* Realm.h */; };
 		6108B62490C1C0715783C7CF562B07A7 /* bson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5E90A5C1658028945002E181B49DFE4 /* bson.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"10.1.1\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		62D4000E5DD961FF8259F3C6BE1910B8 /* RLMArray.h in Headers */ = {isa = PBXBuildFile; fileRef = E35D3CEEC091C169CDB77ADB268E7430 /* RLMArray.h */; };
-		63D658BF254C9CD700579E5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A3CF316AC981A167EC23CD2AAA4574 /* Realm.framework */; };
-		63D658C0254C9CD800579E5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A3CF316AC981A167EC23CD2AAA4574 /* Realm.framework */; };
-		63D658C1254C9DB600579E5E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829DFABF698665D4847103599FC5466E /* Security.framework */; };
-		63D658C2254C9DB600579E5E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829DFABF698665D4847103599FC5466E /* Security.framework */; };
 		642E161B02B38B6D4C18373D2C37D573 /* RLMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98B55699C31FD8FEF75965DB4FDF3E81 /* RLMProperty.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"10.1.1\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		64A68FDD7E4FF7FE7BDED7EE918A8B25 /* RLMSyncManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B61706CD979CA4D27293E629BE8BF2A6 /* RLMSyncManager.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"10.1.1\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		6716FF1CBBC2058109298ADABAA89AAC /* Pods-MyPlaces-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2C18206B49A9D5382B56A2AA093DC5 /* Pods-MyPlaces-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -597,7 +593,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D658C0254C9CD800579E5E /* Realm.framework in Frameworks */,
 				EC2C05D6ADBA912231F8410FA423231B /* Foundation.framework in Frameworks */,
 				EF8315A2DB22F71F180696A79E9FF10A /* Security.framework in Frameworks */,
 			);
@@ -607,8 +602,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D658BF254C9CD700579E5E /* Realm.framework in Frameworks */,
-				63D658C1254C9DB600579E5E /* Security.framework in Frameworks */,
 				5EA68FF63C556569F36E0B94CB589464 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,7 +611,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1C2E504E036D334BDE2EBBE58452D8 /* Foundation.framework in Frameworks */,
-				63D658C2254C9DB600579E5E /* Security.framework in Frameworks */,
 				8FEC9AAFEC18ECC0FFA72C6FB5344CF2 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1103,7 +1095,7 @@
 				LastUpgradeCheck = 1210;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1427,7 +1419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1524,7 +1516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,6 +10,7 @@
 		632181252541E0DB00F17D78 /* CustomTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632181242541E0DB00F17D78 /* CustomTVCell.swift */; };
 		632181282541FABC00F17D78 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632181272541FABC00F17D78 /* PlaceModel.swift */; };
 		6321812C254309FE00F17D78 /* NewPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321812B254309FE00F17D78 /* NewPlaceVC.swift */; };
+		63237B332557EE6700A3FA87 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63237B322557EE6700A3FA87 /* RatingControl.swift */; };
 		635E83DD254CACAE0010C878 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635E83DC254CACAE0010C878 /* StorageManager.swift */; };
 		63A3476425406EE100D6F76B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3476325406EE100D6F76B /* AppDelegate.swift */; };
 		63A3476625406EE100D6F76B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3476525406EE100D6F76B /* SceneDelegate.swift */; };
@@ -17,14 +18,14 @@
 		63A3476D25406EE400D6F76B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A3476C25406EE400D6F76B /* Assets.xcassets */; };
 		63A3477025406EE400D6F76B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A3476E25406EE400D6F76B /* LaunchScreen.storyboard */; };
 		63A3477A25406F7400D6F76B /* MyPlacesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A3477925406F7400D6F76B /* MyPlacesTVC.swift */; };
-		784153558483386B54489880 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED94B6993A0F2859C2B096A /* Pods_MyPlaces.framework */; };
+		8F6C98CB60587257FCEFB92E /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4452DA38498E898D535A45D /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30120CDF7BC00BC4416127C2 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		632181242541E0DB00F17D78 /* CustomTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVCell.swift; sourceTree = "<group>"; };
 		632181272541FABC00F17D78 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		6321812B254309FE00F17D78 /* NewPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceVC.swift; sourceTree = "<group>"; };
+		63237B322557EE6700A3FA87 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		635E83DC254CACAE0010C878 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		63A3476025406EE100D6F76B /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A3476325406EE100D6F76B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +35,9 @@
 		63A3476F25406EE400D6F76B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A3477125406EE400D6F76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A3477925406F7400D6F76B /* MyPlacesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesTVC.swift; sourceTree = "<group>"; };
-		8B3E7918A713DF2CD195D6F9 /* Pods-MyPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.release.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.release.xcconfig"; sourceTree = "<group>"; };
-		EED94B6993A0F2859C2B096A /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4452DA38498E898D535A45D /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C379AB990AAC455F292DF094 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
+		D7C418E33BD79BB30AAA6763 /* Pods-MyPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.release.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +45,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784153558483386B54489880 /* Pods_MyPlaces.framework in Frameworks */,
+				8F6C98CB60587257FCEFB92E /* Pods_MyPlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5771A6D0628EF126E858CFB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4452DA38498E898D535A45D /* Pods_MyPlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63A3475725406EE100D6F76B = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 				63A3477C2540748700D6F76B /* Supporting Files */,
 				63A3476125406EE100D6F76B /* Products */,
 				8CE2FC6C5CD4DA7305C1AF6E /* Pods */,
+				5771A6D0628EF126E858CFB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,10 +84,10 @@
 			children = (
 				63A3476925406EE100D6F76B /* Main.storyboard */,
 				6321812B254309FE00F17D78 /* NewPlaceVC.swift */,
+				63237B322557EE6700A3FA87 /* RatingControl.swift */,
 				63A3477925406F7400D6F76B /* MyPlacesTVC.swift */,
 				632181242541E0DB00F17D78 /* CustomTVCell.swift */,
 				63A3477125406EE400D6F76B /* Info.plist */,
-				FF60944CDFA0DC3809959EA3 /* Frameworks */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -97,19 +108,10 @@
 		8CE2FC6C5CD4DA7305C1AF6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				30120CDF7BC00BC4416127C2 /* Pods-MyPlaces.debug.xcconfig */,
-				8B3E7918A713DF2CD195D6F9 /* Pods-MyPlaces.release.xcconfig */,
+				C379AB990AAC455F292DF094 /* Pods-MyPlaces.debug.xcconfig */,
+				D7C418E33BD79BB30AAA6763 /* Pods-MyPlaces.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		FF60944CDFA0DC3809959EA3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EED94B6993A0F2859C2B096A /* Pods_MyPlaces.framework */,
-			);
-			name = Frameworks;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,11 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63A3477425406EE400D6F76B /* Build configuration list for PBXNativeTarget "MyPlaces" */;
 			buildPhases = (
-				F192C539AF5A51C8BF2B1BF1 /* [CP] Check Pods Manifest.lock */,
+				64983CC5B4E319DA9A2D953E /* [CP] Check Pods Manifest.lock */,
 				63A3475C25406EE100D6F76B /* Sources */,
 				63A3475D25406EE100D6F76B /* Frameworks */,
 				63A3475E25406EE100D6F76B /* Resources */,
-				3C51DA199A2AE234BEAFCAE8 /* [CP] Embed Pods Frameworks */,
+				06DA3E6B27B925501DA3645C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,7 +182,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C51DA199A2AE234BEAFCAE8 /* [CP] Embed Pods Frameworks */ = {
+		06DA3E6B27B925501DA3645C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,7 +199,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyPlaces/Pods-MyPlaces-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F192C539AF5A51C8BF2B1BF1 /* [CP] Check Pods Manifest.lock */ = {
+		64983CC5B4E319DA9A2D953E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,6 +232,7 @@
 				63A3477A25406F7400D6F76B /* MyPlacesTVC.swift in Sources */,
 				632181282541FABC00F17D78 /* PlaceModel.swift in Sources */,
 				635E83DD254CACAE0010C878 /* StorageManager.swift in Sources */,
+				63237B332557EE6700A3FA87 /* RatingControl.swift in Sources */,
 				6321812C254309FE00F17D78 /* NewPlaceVC.swift in Sources */,
 				632181252541E0DB00F17D78 /* CustomTVCell.swift in Sources */,
 				63A3476625406EE100D6F76B /* SceneDelegate.swift in Sources */,
@@ -376,7 +379,7 @@
 		};
 		63A3477525406EE400D6F76B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30120CDF7BC00BC4416127C2 /* Pods-MyPlaces.debug.xcconfig */;
+			baseConfigurationReference = C379AB990AAC455F292DF094 /* Pods-MyPlaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -396,7 +399,7 @@
 		};
 		63A3477625406EE400D6F76B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B3E7918A713DF2CD195D6F9 /* Pods-MyPlaces.release.xcconfig */;
+			baseConfigurationReference = D7C418E33BD79BB30AAA6763 /* Pods-MyPlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

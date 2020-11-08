@@ -27,16 +27,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="CnB-ZI-apm">
-                                                    <rect key="frame" x="20" y="11" width="374" height="228"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="CnB-ZI-apm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                             <constraints>
-                                                <constraint firstItem="CnB-ZI-apm" firstAttribute="bottom" secondItem="abI-ze-7My" secondAttribute="bottomMargin" id="5Mx-kL-Lwh"/>
-                                                <constraint firstItem="CnB-ZI-apm" firstAttribute="trailing" secondItem="abI-ze-7My" secondAttribute="trailingMargin" id="OxM-Cm-4t3"/>
-                                                <constraint firstItem="CnB-ZI-apm" firstAttribute="leading" secondItem="abI-ze-7My" secondAttribute="leadingMargin" id="iGp-VJ-i0U"/>
-                                                <constraint firstItem="CnB-ZI-apm" firstAttribute="top" secondItem="abI-ze-7My" secondAttribute="topMargin" id="ozS-Z2-Bsw"/>
+                                                <constraint firstItem="CnB-ZI-apm" firstAttribute="leading" secondItem="abI-ze-7My" secondAttribute="leading" id="4m6-Ko-Fyy"/>
+                                                <constraint firstAttribute="trailing" secondItem="CnB-ZI-apm" secondAttribute="trailing" id="Zq0-Pm-n2i"/>
+                                                <constraint firstItem="CnB-ZI-apm" firstAttribute="top" secondItem="abI-ze-7My" secondAttribute="top" id="r8P-ln-6Ii"/>
+                                                <constraint firstAttribute="bottom" secondItem="CnB-ZI-apm" secondAttribute="bottom" id="sQt-6S-zTr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -145,6 +145,23 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="140" id="wjq-Jd-PdI">
+                                        <rect key="frame" x="0.0" y="503" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wjq-Jd-PdI" id="haN-qm-TPz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="H7k-rI-kSe" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
+                                                    <rect key="frame" x="81" y="48" width="252" height="44"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="H7k-rI-kSe" firstAttribute="centerX" secondItem="haN-qm-TPz" secondAttribute="centerX" id="2Rh-gi-qOi"/>
+                                                <constraint firstItem="H7k-rI-kSe" firstAttribute="centerY" secondItem="haN-qm-TPz" secondAttribute="centerY" id="gBE-IL-dMD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -170,13 +187,14 @@
                         <outlet property="placeLocation" destination="Pxs-dz-kKj" id="jkh-Qn-pNg"/>
                         <outlet property="placeName" destination="0k0-PF-p5D" id="eXh-Q9-VJv"/>
                         <outlet property="placeType" destination="ofj-j3-LYa" id="GZR-v7-ZaA"/>
+                        <outlet property="ratingControl" destination="H7k-rI-kSe" id="oiz-wu-muQ"/>
                         <outlet property="saveButton" destination="eQS-PZ-nL9" id="7G5-eJ-R5i"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbc-t1-i2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="hoV-gh-vnU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="-58"/>
+            <point key="canvasLocation" x="1769.5652173913045" y="-58.258928571428569"/>
         </scene>
         <!--My Places-->
         <scene sceneID="kCL-8W-h55">
@@ -197,7 +215,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeI-Ct-ohb">
-                                <rect key="frame" x="0.0" y="120" width="414" height="742"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="776"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placesCell" id="gJ6-fu-nPN" customClass="CustomTVCell" customModule="MyPlaces" customModuleProvider="target">
@@ -265,7 +283,7 @@
                         <viewLayoutGuide key="safeArea" id="Gg1-iM-jSc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WeI-Ct-ohb" firstAttribute="bottom" secondItem="Gg1-iM-jSc" secondAttribute="bottom" id="8uO-Hr-Qhp"/>
+                            <constraint firstItem="WeI-Ct-ohb" firstAttribute="bottom" secondItem="D83-x2-6Pj" secondAttribute="bottom" id="8uO-Hr-Qhp"/>
                             <constraint firstItem="WeI-Ct-ohb" firstAttribute="trailing" secondItem="Gg1-iM-jSc" secondAttribute="trailing" id="B1s-Ek-z0B"/>
                             <constraint firstItem="Wi1-nv-2Yw" firstAttribute="leading" secondItem="Gg1-iM-jSc" secondAttribute="leading" id="CDH-9W-Rn1"/>
                             <constraint firstItem="Wi1-nv-2Yw" firstAttribute="top" secondItem="Gg1-iM-jSc" secondAttribute="top" id="E8h-m4-P67"/>
@@ -339,6 +357,11 @@
             <point key="canvasLocation" x="1772" y="-779"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="H7k-rI-kSe">
+            <size key="intrinsicContentSize" width="252" height="44"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="ElN-cN-1Io"/>
     </inferredMetricsTieBreakers>
