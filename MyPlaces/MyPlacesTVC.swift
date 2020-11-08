@@ -46,26 +46,19 @@ class MyPlacesTVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         if isFiltering {
             return filteredPlaces.count
         }
-        return places.isEmpty ? 0 : places.count
+        return places.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "placesCell", for: indexPath) as! CustomTVCell
         
-        var place = Place()
-        if isFiltering {
-            place = filteredPlaces[indexPath.row]
-        } else {
-            place = places[indexPath.row]
-        }
-     
+        let place = isFiltering ? filteredPlaces[indexPath.row] : places[indexPath.row]
         
         cell.nameLabel.text = place.name
         cell.locationLabel.text = place.location
         cell.typeLabel.text = place.type
         cell.imageOfCell.image = UIImage(data: place.imageData!)
-        cell.imageOfCell.layer.cornerRadius = cell.imageOfCell.frame.size.height / 2
-        cell.imageOfCell.clipsToBounds = true
+        cell.cosmosView.rating = place.rating
         
         return cell
     }
@@ -84,26 +77,19 @@ class MyPlacesTVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         }
     }
     
-    
-    
-    
     //  MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "showDetail" {
             guard let indexPath =  tableView.indexPathForSelectedRow else { return }
-            let place: Place
-            if isFiltering {
-                place = filteredPlaces[indexPath.row]
-            } else {
-                place = places[indexPath.row]
-            }
+            
+            let place = isFiltering ? filteredPlaces[indexPath.row] : places[indexPath.row]
+            
             let newPlaceViewContr = segue.destination as? NewPlaceVC
             newPlaceViewContr?.currentPlace = place
         }
     }
-    
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue){
         
@@ -111,7 +97,6 @@ class MyPlacesTVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         
         newPlaceViewContr.savePlace()
         tableView.reloadData()
-        
     }
     
     @IBAction func sortSelection(_ sender: UISegmentedControl) {
@@ -143,10 +128,10 @@ extension MyPlacesTVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
     }
+    
+    private func filterContentForSearchText(_ searchText: String) {
         
-        private func filterContentForSearchText(_ searchText: String) {
-            
-            filteredPlaces  = places.filter("name CONTAINS[c] %@ OR location CONTAINS[c] %@", searchText, searchText  )
-            tableView.reloadData()
+        filteredPlaces  = places.filter("name CONTAINS[c] %@ OR location CONTAINS[c] %@", searchText, searchText  )
+        tableView.reloadData()
     }
 }
