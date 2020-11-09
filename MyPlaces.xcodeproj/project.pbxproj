@@ -85,9 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				63A3476925406EE100D6F76B /* Main.storyboard */,
-				63237B3F2558324900A3FA87 /* MapViewController.swift */,
 				63A3477925406F7400D6F76B /* MyPlacesTVC.swift */,
 				6321812B254309FE00F17D78 /* NewPlaceVC.swift */,
+				63237B3F2558324900A3FA87 /* MapViewController.swift */,
 				63237B322557EE6700A3FA87 /* RatingControl.swift */,
 				632181242541E0DB00F17D78 /* CustomTVCell.swift */,
 				63A3477125406EE400D6F76B /* Info.plist */,
