@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
     @IBOutlet var mapPinImage: UIImageView!
-    @IBOutlet var adressLabel: UIImageView!
+    @IBOutlet var addressLabel: UIImageView!
     @IBOutlet var doneButton: UIButton!
     
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ class MapViewController: UIViewController {
             setupPlacemark()
             mapPinImage.isHidden = true
             doneButton.isHidden = true
-            adressLabel.isHidden = true
+            addressLabel.isHidden = true
         }
     }
     
