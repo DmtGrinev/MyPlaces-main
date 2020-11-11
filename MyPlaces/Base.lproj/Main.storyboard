@@ -503,14 +503,6 @@
             <point key="canvasLocation" x="1772" y="-779"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="H7k-rI-kSe">
-            <size key="intrinsicContentSize" width="252" height="44"/>
-        </designable>
-        <designable name="NpU-l1-gOa">
-            <size key="intrinsicContentSize" width="90" height="14"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="3pf-NA-ONZ"/>
         <segue reference="ElN-cN-1Io"/>
